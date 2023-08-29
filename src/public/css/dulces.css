@@ -1,111 +1,206 @@
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 10%;
-    padding: 0;
-    margin-top: 5px;
-    background-color: #ececec;
+  font-family: 'Poppins', sans-serif;
+  margin: 10%;
+  padding: 0;
+  margin-top: 5px;
+  background-color: #ececec;
 
-  
-  }
-  .container0{
-    background-color: #FFC8DD;
+
+}
+
+.container0 {
+  background-color: #FFC8DD;
+
+}
+
+.container img {
+  width: 120%;
+
+}
+
+
+
+
+#title {
+  font-size: 36px;
+  font-weight: 10%;
+  margin-top: 20px;
+
+
+
+}
+
+#sub-title {
+  font-size: 36px;
+  color: #ffffff;
+  position: relative;
+  left: 40%;
+}
+
+#input {
+  margin-top: -35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  left: 10px;
+  width: 145%;
+}
+
+#inputBox {
+  margin: 10px 0;
+  width: 300px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #b63636;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #29deeb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+  left: 25%;
+}
+
+input[type="submit"]:hover {
+  background-color: #c029c5;
+}
+
+@media (max-width: 750px) {
+  .container0 {
+    /* Reducir el ancho del contenedor */
+    max-width: 100%;
+    position: relative;
+    /* Ajustar el ancho máximo del inputBox */
+    left: -15%;
 
   }
 
-  .container img {
-    width: 120%;
-  
-  }
-  
-  
-
-  
-  #title {
-    font-size: 36px;
-    font-weight: 10%;
-    margin-top: 20px;
- 
-  
-    
-  }
-  
   #sub-title {
-    font-size: 36px;
-    color: #ffffff;
-    position: relative;
-    left: 40%;
+    font-size: 18px;
+    /* Ajustar el tamaño de fuente */
+    text-align: center;
+    left: 0;
   }
-  
-  #input {
-    margin-top: -35%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    left: 10px;
-    width:145% ; 
-   }
-  
+
   #inputBox {
-    margin: 10px 0;
-    width: 300px;
-  }
-  
-  label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  .form-control {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #b63636;
-    border-radius: 4px;
-  }
-  
-  input[type="submit"] {
-    background-color: #29deeb;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
     position: relative;
-    left: 25%;
+    /* Ajustar el ancho máximo del inputBox */
+    left: -15%;
+    justify-content: center;
+    padding: 10px;
+
   }
-  
-  input[type="submit"]:hover {
-    background-color: #c029c5;
+
+  input[type="submit"] {
+    max-width: 100%;
+    position: relative;
+    /* Ajustar el ancho máximo del inputBox */
+    left: 50%;
   }
-  @media (max-width: 750px) {
-    .container0 {
-      /* Reducir el ancho del contenedor */
-        max-width: 100%;
-        position: relative; /* Ajustar el ancho máximo del inputBox */
-        left: -15%;
-    
-      }
-    
-      #sub-title {
-        font-size: 18px; /* Ajustar el tamaño de fuente */
-        text-align: center;
-        left: 0;
-      }
-    
-      #inputBox {
-        position: relative; /* Ajustar el ancho máximo del inputBox */
-        left: -15%;
-        justify-content:center;
-        padding: 10px;
-      
-      }
-    
-      input[type="submit"] {
-        max-width: 100%;
-        position: relative; /* Ajustar el ancho máximo del inputBox */
-        left: 50%;
-      }
-      
-      }
+
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 5%;
+  padding: 0;
+  background-color: #ececec;
+}
+
+.container0 {
+  background-color: #FFC8DD;
+  max-width: 100%; /* Adjust width */
+}
+
+.container img {
+  width: 100%; /* Adjust width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+#title {
+  font-size: 24px; /* Adjust font size */
+  margin-top: 10px; /* Adjust margin */
+}
+
+#sub-title {
+  font-size: 24px; /* Adjust font size */
+  color: #ffffff;
+  text-align: center; /* Center text */
+  margin-top: 10px; /* Adjust margin */
+}
+
+#input {
+  margin-top: -20%; /* Adjust margin */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  left: 10px;
+  width: 100%; /* Adjust width */
+}
+
+#inputBox {
+  margin: 10px 0;
+  width: 100%; /* Adjust width */
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #b63636;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #29deeb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%; /* Adjust width */
+  margin-top: 10px; /* Adjust margin */
+}
+
+input[type="submit"]:hover {
+  background-color: #c029c5;
+}
+
+@media (max-width: 750px) {
+  #sub-title {
+    font-size: 18px;
+  }
+
+  #inputBox {
+    left: 0;
+    padding: 0; /* Adjust padding */
+  }
+
+  input[type="submit"] {
+    max-width: 100%;
+    left: 0;
+    margin: 10px auto; /* Adjust margin */
+  }
+}
