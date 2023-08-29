@@ -114,6 +114,22 @@ input[type="submit"]:hover {
     left: 50%;
   }
 
+
+@media (max-width: 750px) {
+  #sub-title {
+    font-size: 18px;
+  }
+
+  #inputBox {
+    left: 0;
+    padding: 0; /* Adjust padding */
+  }
+
+  input[type="submit"] {
+    max-width: 100%;
+    left: 0;
+    margin: 10px auto; /* Adjust margin */
+  }
 }
 body {
   font-family: 'Poppins', sans-serif;
@@ -187,20 +203,4 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #c029c5;
 }
-
-@media (max-width: 750px) {
-  #sub-title {
-    font-size: 18px;
-  }
-
-  #inputBox {
-    left: 0;
-    padding: 0; /* Adjust padding */
-  }
-
-  input[type="submit"] {
-    max-width: 100%;
-    left: 0;
-    margin: 10px auto; /* Adjust margin */
-  }
 }

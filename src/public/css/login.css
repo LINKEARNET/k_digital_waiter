@@ -117,6 +117,24 @@ input:focus{
 				inset -4px -4px 4px #f9f9f9;
 }
 
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .contenedor-login {
+        margin-top: 20%;
+    }
+
+    .titulo,
+    .parrafo,
+    .titulo2 {
+        font-size: 20px;
+    }
+
+    .button-login {
+        width: 120px;
+        height: 35px;
+        font-size: 11px;
+    }
+    
 body {
     display: flex;
     justify-content: center;
@@ -206,21 +224,4 @@ input:focus {
     box-shadow: inset 4px 4px 4px #d1d9e6, inset -4px -4px 4px #f9f9f9;
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    .contenedor-login {
-        margin-top: 20%;
-    }
-
-    .titulo,
-    .parrafo,
-    .titulo2 {
-        font-size: 20px;
-    }
-
-    .button-login {
-        width: 120px;
-        height: 35px;
-        font-size: 11px;
-    }
 }
