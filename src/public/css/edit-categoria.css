@@ -1,0 +1,84 @@
+.container {
+    max-width: 400px;
+    padding: -30%;
+    border: 1px solid  rgb(145, 194, 241);
+    border-radius: 10px;
+    background-color: rgb(145, 194, 241);
+}
+
+.card {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.card-title {
+    font-size: 24px;
+}
+
+
+#title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 20%;
+}
+
+#sub-title {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 20px;
+    border: center 1px solid;
+}
+
+#inputBox {
+    margin-bottom: 15px;
+}
+
+#input {
+    margin-bottom: 5px;
+}
+label {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid rgb(145, 194, 241);
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 35%;
+    margin-top: 5%;
+}
+
+input[type="submit"]:hover {
+    background-color: #f3f3f3;
+}
+
+/* Apply specific styles */
+.border-primary {
+    border: 2px solid rgb(0, 0, 0);
+    /* You can customize the border color as needed */
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+/* Add more styles as needed */
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+}

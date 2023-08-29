@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="/css/edit.css" />
+<div class="container">
+    <form action="/restaurantes/edit-restaurantes/{{restaurante.id}}" method="POST">
+        <div id="logo"></div>
+        <div id="title">Restaurante</div>
+        <div id="input">
+            <div id="inputBox">
+                <label>Nombre restaurante</label>
+                <input type="text" value="{{restaurante.nombre_restaurante}}" name="nombre_restaurante"
+                    class="form-control" placeholder="Nombre Restaurante" />
+            </div>
+            <div id="inputBox">
+                <label>Nombre del Dueño</label>
+                <input type="text" value="{{restaurante.dueno}}" name="dueno" class="form-control"
+                    placeholder="Nombre del Dueño" />
+            </div>
+            <div id="inputBox">
+                <label>descripcion</label>
+                <input type="text" value="{{restaurante.descripcion}}" name="descripcion" class="form-control"
+                    placeholder="descripcion" />
+            </div>
+            <div id="inputBox">
+                <label>telefono</label>
+                <input type="text" value="{{restaurante.telefono}}" class="form-control" name="telefono"
+                    placeholder="telefono" autofocus />
+            </div>
+            <div id="inputBox">
+                <input type="submit" value="Guardar" />
+            </div>
+        </div>
+    </form>
+</div>

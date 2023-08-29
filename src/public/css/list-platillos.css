@@ -1,0 +1,172 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 10px;
+    padding: 0%;
+    background-color: #cfcfcfb7;
+}
+
+.carousel-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #8D99AE;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: -5%;
+    text-align: center;
+}
+
+.card h2.card p {
+    margin: 10px 0;
+}
+
+.col-md-12 {
+    margin-bottom: 10px;
+    padding: relative;
+    left: 150%;
+}
+
+.card.text-center {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #EDF2F4;
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
+
+
+.imagen-link img {
+    max-width: 70px;
+    /* Ajusta el tamaño máximo de la imagen según tus necesidades */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.imagen-link img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    color: #d1230c
+        /* Cambio de color al pasar el cursor por encima */
+}
+
+.card img {
+    max-width: 10%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px;
+    background-color: #168aad ;
+    transform :0.3s ease-in-out;
+    box-shadow: 0.3s ease-in-out;
+    position: relative;
+    left: 4%;
+    max-width: 90px;
+    /* Ajusta el tamaño máximo de la imagen según tus necesidades */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.card-body {
+    background-color: #7980cc;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 50%;
+    margin: 2%;
+    padding: 25px;
+    position: relative;
+    left: 23%;
+
+}
+
+.card__image {
+    max-width: 150px;
+    /* Ajusta el tamaño máximo de la imagen según tus necesidades */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.danger {
+    color: white;
+    background-color: #dc3545;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.secondary {
+    color: white;
+    background-color: #406add;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+form {
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+
+input[type="submit"] {
+    background-color: #83e748;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .carousel-container {
+        justify-content:center;
+        padding: 10px;
+    }
+
+    .card {
+        max-width: 100%;
+    
+    }
+  
+
+    .col-md-12 {
+        left: 0;
+    }
+
+    .card.text-center {
+        width: 100%;
+        left: 0;
+    }
+
+    .card-body {
+        max-width: 100%;
+        left: 20px;
+    }
+}
+
+
+

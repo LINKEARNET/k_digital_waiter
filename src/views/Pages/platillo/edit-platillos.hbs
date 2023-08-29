@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="/css/edit.css">
+<div class="container">
+    <form action="/platillos/edit-platillos/{{platillo.id}}" method="POST">
+        <div id="logo"></div>
+        <div id="title">Editar Platillo</div>
+        <div id="input">
+            <div id="inputBox">
+                <label>Nombre Patillo</label>
+                <input type="text" value="{{platillo.nombre_platillo}}" name="nombre_platillo" class="form-control"
+                    placeholder="Nombre Platillo" />
+            </div>
+            <div id="inputBox">
+                <label>descripcion</label>
+                <input type="text" value="{{platillo.descripcion}}" name="descripcion" class="form-control"
+                    placeholder=" Descripcion" />
+            </div>
+            <div id="inputBox">
+                <label>precio</label>
+                <input type="text" value="{{platillo.precio}}" class="form-control" name="precio"
+                    placeholder="Precio" autofocus />
+            </div>
+            <div id="inputBox">
+                <input type="submit" value="Guardar" />
+            </div>
+        </div>
+    </form>
+</div>
+</div>
+</div>
+</div>
+
+
+
+

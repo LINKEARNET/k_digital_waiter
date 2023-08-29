@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="/css/edit.css">
+<div class="container">
+    <form action="/menus/edit-menus/{{menu.id}}" method="POST">
+        <div id="logo"></div>
+        <div id="title">Editar Menu
+        </div>
+        <div id="input">
+            <div id="inputBox">
+                <label>Nombre  menu</label>
+                <input type="text" value="{{menu.nombre_menu}}" name="nombre_menu" class="form-control"
+                    placeholder="Nombre Menu" />
+            </div>
+            <div id="inputBox">
+                <label>descripcion</label>
+                <input type="text" value="{{menu.descripcion}}" name="descripcion" class="form-control"
+                    placeholder="Descripcion" />
+            </div>
+            <div id="inputBox">
+                <label>precio</label>
+                <input type="text" value="{{menu.precio}}" class="form-control" name="precio"
+                    placeholder="Precio" autofocus />
+            </div>
+            <div id="inputBox">
+                <input type="submit" value="Guardar" />
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+

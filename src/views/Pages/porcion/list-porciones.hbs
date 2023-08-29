@@ -1,0 +1,82 @@
+<link rel="stylesheet" href="/css/list-porcion.css">
+ <div class="col-md-12" style="margin-bottom: 5px; ">
+        <div class="card text-center border border-primary">
+
+            <h3 class="card-title text-uppercase" style="color: rgb(102, 29, 151);">
+                Porciones
+            </h3>
+        </div>
+<div class="carousel-container">
+ <div class="card" href=" ">
+        <img src="/images/img-porcion/SALADOS.jpeg" alt="">
+        <h2> Salados</h2>
+      <p> </p>
+    </div>
+    <div class="card" href=" ">
+        <img src="/images/img-porcion/ENSALADA.jpeg" alt="">
+        <h2>Ensaladas</h2>
+    
+    </div>
+    <div class="card" href=" ">
+      <img src="/images/img-porcion/MARISCOS.jpeg" alt="">
+    <h2>Mariscos</h2>
+      
+    </div>
+   <div class="card" href=" ">
+      <img src="/images/img-porcion/POLLO.jpeg" alt="">
+  <h2>Carnes</h2>
+      
+    </div>
+     <div class="card" href=" ">
+      <img src="/images/img-porcion/HELADO.jpeg" alt="">
+       <h2>Helados</h2>
+     
+    </div>
+  <div class="col-md-12" style="margin-bottom: 5px; ">
+        <div class="card text-center border border-primary">
+
+            <h3 class="card-title text-uppercase" style="color: rgb(102, 29, 151);">
+             Registre sus Porciones aki
+            </h3> 
+        </div>
+           <a class="imagen-link" href="/porciones/add"  >
+    <img src="/images/img-bebida/anadir.png" alt=" ">
+</a>
+    <div class="col-md-12" style="margin-bottom: 5px; ">
+        <div class="card text-center border border-primary">
+
+            <h3 class="card-title text-uppercase" style="color: rgb(102, 29, 151);">
+                Agregados
+            </h3>
+        </div>
+        
+{{#each porciones}}
+<div class="card-body">
+    <p>{{nombre_porcion}}</p>
+    <p>{{descripcion}}</p>
+     {{#if foto}}
+    <img class="card__image" src="/{{foto}}" loading="lazy" alt="User Profile">
+    {{else}}
+    <img src="/not-found/not-found-image.png" class="card__image" alt="..." alt="User Profile">
+    {{/if}}
+   
+    <p>{{precio}}</p>
+
+   
+    <center>
+        <a href="/porciones/delete-porciones/{{id}}" class="danger">Eliminar</a>
+        <a href="/porciones/edit-porciones/{{id}}" class="secondary">Editar</a>
+
+        
+        <form action="/porciones/foto-porcion/{{id}}" method="POST" encType="multipart/form-data">
+            <input type="file" name="sampleFile" accept="image/*" />
+            <input type="submit">
+        </form>
+    </center>
+</div>
+{{else}}
+<center> 
+</center>
+{{/each}}
+
+

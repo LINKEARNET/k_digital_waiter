@@ -1,0 +1,97 @@
+<link rel="stylesheet" href="/css/list-categoria.css">
+ <div class="col-md-12" style="margin-bottom: 5px; ">
+        <div class="card text-center border border-primary">
+
+            <h3 class="card-title text-uppercase" style="color: rgb(102, 29, 151);">
+                categorias
+            </h3>
+        </div>
+<div class="carousel-container">
+    
+ <div class="card" >
+    <a href="/bebidas/list-bebidas" >
+        <img src="/images/img-bebida/coca.jpg" alt="">
+      <p> categorias</p>
+       <h2>Bebidas</h2>
+       </a>
+    </div>
+    <div class="card" >
+    <a href="/dulces/list-dulces" >
+        <img src="/images/img-bebida/dulce.jpg" alt="">
+     <p> categorias</p>
+       <h2>Dulces</h2>
+           </a>
+    </div>
+    <div class="card" href=" ">
+         <a href="/porciones/list-porciones" >
+      <img src="/images/img-bebida/porciones.jpg" alt="">
+       <p> categorias</p>
+       <h2>Porciones</h2>
+       </a>
+    </div>
+   <div class="card" href=" ">
+        <a href="/menus/list-menus" >
+      <img src="/images/img-bebida/menu.png" alt="">
+  <p> categorias</p>
+     <h2>Menus</h2>
+     </a>
+    </div>
+     <div class="card" >
+     <a href="/platillos/list-platillos" >
+      <img src="/images/img-bebida/platillo.jpg" alt="">
+       <p> categorias</p>
+       <h2>Platillos</h2>
+       </a>
+
+    </div>
+     <div class="card" href=" ">
+          
+    <a href="/restaurantes/list-restaurantes" >
+      <img src="/images/img-bebida/restaurante.jpg" alt="">
+       <p> categorias</p>
+       <h2>Restaurantes</h2>
+       </a>
+    </div>
+
+     <div class="col-md-12" style="margin-bottom: 5px; ">
+        <div class="card text-center border border-primary">
+
+            <h3 class="card-title text-uppercase" style="color:rgb(102, 29, 151);">
+             Registre su  Categoria aki aki
+            </h3> 
+        </div>
+           <a class="imagen-link" href="/categorias/add"  >
+    <img src="/images/img-bebida/anadir.png" alt=" ">
+</a>
+</a>
+    <div class="col-md-12" style="margin-bottom: 5px; ">
+        <div class="card text-center border border-primary">
+
+            <h3 class="card-title text-uppercase" style="color: rgb(102, 29, 151);">
+                Agregados
+            </h3>
+        </div>
+
+{{#each categorias}}
+<div class="card-body">
+    <p>{{nombre_Categoria}}</p>
+    <p>{{descripcion}}</p>
+    {{#if foto}}
+    <img class="card__image" src="/{{foto}}" loading="lazy" alt="User Profile">
+    {{else}}
+    <img src="/not-found/not-found-image.png" class="card__image" alt="..." alt="User Profile">
+    {{/if}}
+    <center>
+        <a href="/categorias/delete-categorias/{{id}}" class="danger">Eliminar</a>
+        <a href="/categorias/edit-categorias/{{id}}" class="secondary">Editar</a>
+        <form action="/categorias/foto-categoria/{{id}}" method="POST" encType="multipart/form-data">
+            <input type="file" name="sampleFile" accept="image/*" />
+            <input type="submit">
+        </form>
+    </center>
+</div>
+{{else}}
+<center>
+    
+</center>
+{{/each}}

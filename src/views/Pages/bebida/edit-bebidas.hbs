@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="/css/edit.css">
+<div class="container">
+    <form action="/bebidas/edit-bebidas/{{bebida.id}}" method="POST">
+        <div id="logo"></div>
+        <div id="title">Editar Bebida</div>
+        <div id="input">
+            <div id="inputBox">
+                <label>Nombre bebida</label>
+                <input type="text" value="{{bebida.nombre_bebida}}" name="nombre_bebida" class="form-control"
+                    placeholder="Nombre Bebidas" />
+            </div>
+            <div id="inputBox">
+                <label>Descripcion</label>
+                <input type="text" value="{{bebida.descripcion}}" class="form-control" name="descripcion"
+                    placeholder="Descripcion" autofocus />
+            </div>
+            <div id="inputBox">
+                <label>Precio</label>
+                <input type="text" value="{{bebida.precio}}" name="precio" class="form-control" placeholder="Precio" />
+
+                <div id="input">
+                    <input type="submit" value="Guardar" />
+                </div>
+            </div>
+    </form>
+</div>

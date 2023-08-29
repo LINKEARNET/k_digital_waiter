@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="/css/edit.css">
+<div class="container">
+    <form action="/dulces/edit-dulces/{{dulce.id}}" method="POST">
+        <div id="logo"></div>
+        <div id="title">Editar Dulce</div>
+        <div id="input">
+            <br>
+            <div id="inputBox">
+                <label>nombre dulce</label>
+                <input type="text" value="{{dulce.nombre_dulce}}" name="nombre_dulce" class="form-control"
+                    placeholder="Nombre Dulce" />
+            </div>
+            <div id="inputBox">
+                <label>descripcion</label>
+                <input type="text" value="{{dulce.descripcion}}" name="descripcion" class="form-control"
+                    placeholder="Descripcion" />
+            </div>
+            <div id="inputBox">
+                <label>precio</label>
+                <input type="text" value="{{dulce.precio}}" class="form-control" name="precio"
+                    placeholder="Precioo" autofocus />
+            </div>
+            <div id="inputBox">
+                <input type="submit" value="Guardar" />
+            </div>
+        </div>
+    </form>
+</div>
+</div>
+</div>
+</div>
+
+
+
+

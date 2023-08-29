@@ -1,0 +1,77 @@
+<link rel="stylesheet" href="/css/list-bebidas.css">
+ <div class="col-md-12" style="margin-bottom: 5px; ">
+        <div class="card text-center border border-primary">
+
+            <h3 class="card-title text-uppercase" style="color: rgb(102, 29, 151);">
+                Bebidas
+            </h3>
+        </div>
+<div class="carousel-container">
+ <div class="card" href=" ">
+        <img src="/images/img-bebida/AGUA.jpg" alt="">
+        <h2>Agua</h2>
+      <p> Natural y Mineral</p>
+    </div>
+    <div class="card" href=" ">
+        <img src="/images/img-bebida/TRAGO.jpg" alt="">
+        <h2>Bebidas</h2>
+        <p>Alcoholicas</p>
+    </div>
+    <div class="card" href=" ">
+      <img src="/images/img-bebida/coca.jpg" alt="">
+        <h2>Gaseosas</h2>
+        <p>cola</p>
+    </div>
+   <div class="card" href=" ">
+      <img src="/images/img-bebida/cafe.jpg" alt="">
+        <h2>Bebidas</h2>
+        <p>Calientes</p>
+    </div>
+     <div class="card" href=" ">
+      <img src="/images/img-bebida/jugo.jpg" alt="">
+        <h2>Jugos</h2>
+        <p>Naturales</p>
+    </div>
+    <div class="col-md-12" style="margin-bottom: 5px; ">
+        <div class="card text-center border border-primary">
+
+            <h3 class="card-title text-uppercase" style="color:rgb(102, 29, 151);">
+             Registre su Bebida aki
+            </h3> 
+        </div>
+           <a class="imagen-link" href="/bebidas/add"  >
+    <img src="/images/img-bebida/anadir.png" alt=" ">
+</a>
+         <div class="col-md-12" style="margin-bottom: 5px; ">
+        <div class="card text-center border border-primary">
+
+            <h3 class="card-title text-uppercase" style="color: rgb(102, 29, 151);">
+                Agregados
+            </h3> 
+        </div>
+     
+    </div>
+    {{#each bebidas}}
+    <div class="card-body">
+        {{#if foto}}
+        <img class="card__image" src="/{{foto}}" loading="lazy" alt="User Profile">
+        {{else}}
+        <img src="/image/img-bebida/R.jpg" class="card__image" alt="..." alt="User Profile">
+        {{/if}}
+        <p>{{nombre_bebida}}</p>
+        <p>{{descripcion}}</p>
+        <p>{{precio}}</p>
+        <center>
+            <a href="/bebidas/delete-bebidas/{{id}}" class="danger">Eliminar</a>
+            <a href="/bebidas/edit-bebidas/{{id}}" class="secondary">Editar</a>
+            <form action="/bebidas/foto-bebida/{{id}}" method="POST" encType="multipart/form-data">
+                <input type="file" name="sampleFile" accept="image/*" />
+                <input type="submit">
+            </form>
+        </center>
+    </div>
+    {{else}}
+    <center>
+      
+    </center>
+    {{/each}}

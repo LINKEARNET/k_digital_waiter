@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="/css/edit.css">
+<div class="container">
+    <form action="/socios/edit-socios/{{socio.id}}" method="POST">
+        <div id="logo"></div>
+        <div id="title">Editar Socio</div>
+        <div id="input">
+            <div id="inputBox">
+                <label>nombre socio</label>
+                <input type="text" value="{{socio.nombre_socio}}" name="nombre_socio" class="form-control"
+                    placeholder="nombre socio" />
+            </div>
+            <div id="inputBox">
+                <label>apellido socio</label>
+                <input type="text" value="{{socio.apellidoSocio}}" name="apellidoSocio" class="form-control"
+                    placeholder="apellido socio" />
+            </div>
+            <div id="inputBox">
+                <label>correo electronico</label>
+                <input type="text" value="{{socio.correoElectronico}}" class="form-control" name="correoElectronico"
+                    placeholder="Email"/>
+            </div>
+            <div id="inputBox">
+                <label>telefono</label>
+                <input type="text" value="{{socio.telefono}}" name="telefono" class="form-control"
+                    placeholder="telefono"  autofocus />
+            </div>
+            
+            <div id="inputBox">
+                <input type="submit" value="Guardar" />
+            </div>
+        </div>
+    </form>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
