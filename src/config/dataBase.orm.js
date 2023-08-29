@@ -11,7 +11,7 @@ const sequelize = new Sequelize(MYSQLDATABASE, MYSQLUSER, MYSQLPASSWORD, {
 	dialect: 'mysql'
 });
 
-mysql.createConnection({
+/* mysql.createConnection({
   host: process.env.DB_HOST || "127.0.0.1",
   port: process.env.DB_PORT || "3306",
   user     : process.env.DB_USER || "root",
@@ -20,7 +20,7 @@ mysql.createConnection({
   connection.query(`CREATE DATABASE IF NOT EXISTS ${dbName};`).then((res) => {
       console.info("Database created or verified successfully");
   })
-})
+}) */
 
 const usersModel = require('../models/user.model');
 const bebidasModel = require('../models/bebida.model');
