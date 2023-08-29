@@ -79,33 +79,85 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #c029c5;
 }
-@media (max-width: 750px) {
-  .container0 {
-    /* Reducir el ancho del contenedor */
-      max-width: 100%;
-      position: relative; /* Ajustar el ancho máximo del inputBox */
-      left: -15%;
-  
-    }
-  
-    #sub-title {
-      font-size: 18px; /* Ajustar el tamaño de fuente */
-      text-align: center;
-      left: 0;
-    }
-  
-    #inputBox {
-      position: relative; /* Ajustar el ancho máximo del inputBox */
-      left: -15%;
-      justify-content:center;
-      padding: 10px;
-    
-    }
-  
-    input[type="submit"] {
-      max-width: 100%;
-      position: relative; /* Ajustar el ancho máximo del inputBox */
-      left: 50%;
-    }
-    
-    }
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ececec;
+}
+
+.container0 {
+  background-color: #5a5754;
+  padding: 20px;
+}
+
+.container0 img {
+  width: 100%; /* Ajustar la imagen al ancho del contenedor */
+  max-width: 100%;
+  height: auto;
+}
+
+#title {
+  font-size: 24px; /* Tamaño reducido para dispositivos pequeños */
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#sub-title {
+  font-size: 18px; /* Tamaño reducido para dispositivos pequeños */
+  color: #ffffff;
+  text-align: center; /* Centrar el texto */
+  margin-top: 13%;
+}
+
+#input {
+  margin-top: 1%; /* Ajuste necesario para dispositivos pequeños */
+  padding: 1px;
+  box-sizing: border-box;
+}
+
+#inputBox {
+  margin: 0px 0;
+  width: 100%; /* Ancho máximo para adaptarse a pantallas pequeñas */
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #b63636;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #29deeb;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 1px;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input[type="submit"]:hover {
+  background-color: #2981c5;
+}
+
+/* Media Query para dispositivos pequeños */
+@media (max-width: 758px) {
+  #title {
+    font-size: 15px;
+    margin-top: -1%;
+  }
+
+  #sub-title {
+    font-size: 11px;
+  }
+
+  #input {
+    margin-top: -15%; /* Ajuste para dispositivos muy pequeños */
+  }
+}
