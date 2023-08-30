@@ -4,6 +4,7 @@
     border: 1px solid  rgb(145, 194, 241);
     border-radius: 10px;
     background-color: rgb(145, 194, 241);
+    margin-top: 40px;
 }
 
 .card {
@@ -37,7 +38,7 @@
 #input {
     margin-bottom: 5px;
 }
-label {
+#label {
     font-weight: bold;
 }
 
@@ -46,6 +47,7 @@ input[type="text"] {
     padding: 8px;
     border: 1px solid rgb(145, 194, 241);
     border-radius: 5px;
+    
 }
 
 input[type="submit"] {
@@ -56,7 +58,7 @@ input[type="submit"] {
     border-radius: 5px;
     cursor: pointer;
     margin-left: 35%;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
 input[type="submit"]:hover {
@@ -64,12 +66,12 @@ input[type="submit"]:hover {
 }
 
 /* Apply specific styles */
-.border-primary {
+#border-primary {
     border: 2px solid rgb(0, 0, 0);
     /* You can customize the border color as needed */
 }
 
-.text-uppercase {
+#text-uppercase {
     text-transform: uppercase;
 }
 

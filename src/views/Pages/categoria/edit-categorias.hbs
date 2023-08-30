@@ -1,17 +1,17 @@
 <link rel="stylesheet" href="/css/edit-categoria.css">
 <div class="container">
-    <form action="/categorias/edit-teams/{{team.id}}" method="POST">
+    <form action="/categorias/edit-categorias/{{categoria.id}}" method="POST">
         <div id="logo"></div>
         <div id="title">Editar Categoria</div>
         <div id="input">
             <div id="inputBox">
                 <label>Nombre categoria</label>
-                <input type="text" value="{{categoria.nombre_Categoria}}" name="nombre_Categoria" class="form-control"
+                <input type="text" value="{{categoria.nombre_Categoria}}" name="nombre_Categoria" id="form-control"
                     placeholder="Nombre categoria" />
             </div>
             <div id="inputBox">
                 <label>Descripcion</label>
-                <input type="text" value="{{categoria.descripcion}}" name="descripcion" class="form-control"
+                <input type="text" value="{{categoria.descripcion}}" name="descripcion" id="form-control"
                     placeholder="descripcion" />
            </div>
             <div id="inputBox">

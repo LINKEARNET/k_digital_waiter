@@ -6,7 +6,7 @@ body{
     font-size: 12px;
 }
 
-.contenedor-login{
+#contenedor-login{
     display: flex;
     position: absolute;
     margin-top: 15%;
@@ -18,7 +18,7 @@ body{
 		8px 8px 16px #a2a2a3,
 		-8px -8px 16px white;
 }
-.left-login{
+#left-login{
     z-index: 0;
     box-shadow:
     8px 8px 16px #ffffff,
@@ -33,7 +33,7 @@ body{
     height: 70vh;
     border-radius: 0px 15px 15px 0px;
 }
-.titulo{
+#titulo{
     margin-top: 30%;
     text-align: center;
     font-size: 34px;
@@ -41,14 +41,14 @@ body{
     line-height: 1;
     color: black;
 }
-.parrafo{
+#parrafo{
     font-size: 14px;
     letter-spacing: .25px;
     text-align: center;
     line-height: 1.6;
     color: #000000;
 }
-.button-login{
+#button-login{
     cursor: pointer;
     margin-top: 30%;
     width: 180px;
@@ -68,7 +68,7 @@ body{
 	border: none;
     outline: none;
 }
-.right-login{
+#right-login{
     z-index: 100;
     box-shadow:
     8px 8px 16px #a2a2a3,
@@ -83,7 +83,7 @@ body{
     border-radius: 15px 0px 0px 15px;
     line-height: 1;
 }
-.titulo2{
+#titulo2{
     margin-top: 20%;
     text-align: center;
     font-size: 34px;
@@ -92,7 +92,7 @@ body{
     color: black;
 }
 
-.texto{
+#texto{
     width: 350px;
         height: 40px;
         margin: 4px 0;
@@ -111,7 +111,7 @@ body{
 			inset 2px 2px 4px #d1d9e6,
 			inset -2px -2px 4px #f9f9f9;
 }
-input:focus{
+#input:focus{
 			box-shadow:
 				inset 4px 4px 4px #d1d9e6,
 				inset -4px -4px 4px #f9f9f9;
@@ -119,17 +119,17 @@ input:focus{
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    .contenedor-login {
+    #contenedor-login {
         margin-top: 20%;
     }
 
-    .titulo,
-    .parrafo,
-    .titulo2 {
+    #titulo,
+    #parrafo,
+    #titulo2 {
         font-size: 20px;
     }
 
-    .button-login {
+    #button-login {
         width: 120px;
         height: 35px;
         font-size: 11px;
@@ -144,7 +144,7 @@ body {
     margin: 0; /* Reset default margin */
 }
 
-.contenedor-login {
+#contenedor-login {
     display: flex;
     flex-direction: column; /* Stack elements vertically on smaller screens */
     position: absolute;
@@ -153,30 +153,31 @@ body {
     height: 80%;
     background-color: rgb(55, 194, 212);
     border-radius: 20px;
+    margin-top: 40%;
     box-shadow: 8px 8px 16px #a2a2a3, -8px -8px 16px white;
 }
 
-.left-login {
+#left-login {
     z-index: 0;
-    box-shadow: 8px 8px 16px #ffffff, -8px -8px 16px rgb(255, 255, 255);
+    box-shadow: 8px 8px 6px #ffffff, -8px -8px 16px rgb(255, 255, 255);
     justify-content: center;
     text-align: center;
     align-items: center;
     background-color: rgb(83, 187, 206);
     width: 100%; /* Full width on smaller screens */
     height: auto; /* Adjust height */
-    border-radius: 20px 20px 0px 0px; /* Rounded corners */
+    border-radius: 0px 0px 0px 0px;/* Rounded corners */
 }
 
-.titulo,
-.parrafo,
-.titulo2 {
+#titulo,
+#parrafo,
+#titulo2 {
     margin-top: 10%; /* Adjust margin */
     text-align: center;
-    font-size: 24px; /* Adjust font size */
+    font-size: 18px; /* Adjust font size */
 }
 
-.button-login {
+#button-login {
     cursor: pointer;
     margin-top: 20px; /* Adjust margin */
     width: 150px; /* Adjust width */
@@ -192,7 +193,7 @@ body {
     outline: none;
 }
 
-.right-login {
+#right-login {
     z-index: 100;
     box-shadow: 8px 8px 16px #a2a2a3, -8px -8px 16px white;
     justify-content: center;
@@ -200,10 +201,10 @@ body {
     text-align: center;
     height: auto; /* Adjust height */
     width: 100%; /* Full width on smaller screens */
-    border-radius: 0px 0px 20px 20px; /* Rounded corners */
+    border-radius: 0px 0px 0px 0px; /* Rounded corners */
 }
 
-.texto {
+#texto {
     width: 80%; /* Adjust width */
     max-width: 350px; /* Limit maximum width */
     height: 40px;
@@ -220,7 +221,7 @@ body {
     box-shadow: inset 2px 2px 4px #d1d9e6, inset -2px -2px 4px #f9f9f9;
 }
 
-input:focus {
+#input:focus {
     box-shadow: inset 4px 4px 4px #d1d9e6, inset -4px -4px 4px #f9f9f9;
 }
 

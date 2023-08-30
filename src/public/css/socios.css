@@ -1,111 +1,168 @@
 body {
+  font-family: 'Poppins', sans-serif;
+  margin: 10%;
+  padding: 0;
+  background-color: #ececec;
+  margin-top: 5px;
+
+
+}
+
+#container0 {
+  background-color: #35b7d8;
+
+
+}
+
+.container img {
+  width: 120%;
+
+}
+
+
+
+
+#title {
+  font-size: 36px;
+  font-weight: 10%;
+  margin-top: 20px;
+
+
+
+}
+
+#sub-title {
+  font-size: 36px;
+  color: #ffffff;
+  position: relative;
+  left: 40%;
+}
+
+#input {
+  margin-top: -45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  left: 10px;
+  width: 140%;
+
+}
+
+#inputBox {
+  margin: 10px 0;
+  width: 300px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #b63636;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #29deeb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+  left: 25%;
+}
+
+input[type="submit"]:hover {
+  background-color: #c029c5;
+}
+
+@media (max-width: 758px) {
+  #title {
+    font-size: 15px;
+    margin-top: -1%;
+  }
+
+  #sub-title {
+    font-size: 11px;
+  }
+
+  #input {
+    margin-top: 20px;
+    /* Ajuste para dispositivos muy pequeños */
+  }
+
+  body {
     font-family: 'Poppins', sans-serif;
-    margin: 10%;
+    margin: 0;
     padding: 0;
     background-color: #ececec;
-    margin-top: 5px;
-
-  
-  }
-  .container0{
-    background-color: #35b7d8;
-  
-
   }
 
-  .container img {
-    width: 120%;
-  
+  #container0 {
+    background-color: #5a5754;
+    padding: 20px;
   }
-  
-  
 
-  
+  #container0 img {
+    width: 100%;
+    /* Ajustar la imagen al ancho del contenedor */
+    max-width: 100%;
+    height: auto;
+  }
+
   #title {
-    font-size: 36px;
-    font-weight: 10%;
-    margin-top: 20px;
- 
-  
-    
-  }
-  
-  #sub-title {
-    font-size: 36px;
-    color: #ffffff;
-    position: relative;
-    left: 40%;
-  }
-  
-  #input {
-    margin-top: -45%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    left: 10px;
-    width:140% ; 
-   }
-  #inputBox {
-    margin: 10px 0;
-    width: 300px;
-  }
-  
-  label {
-    display: block;
+    font-size: 14px;
+    /* Tamaño reducido para dispositivos pequeños */
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-top: -20px;
   }
-  
+
+  #sub-title {
+    font-size: 18px;
+    /* Tamaño reducido para dispositivos pequeños */
+    color: #ffffff;
+    text-align: center;
+    /* Centrar el texto */
+    margin-top: -2%;
+  }
+
+
+  #inputBox {
+    margin-top: -5px;
+    font-size: 13px;
+    margin-left: -30%;
+    /* Ancho máximo para adaptarse a pantallas pequeñas */
+  }
+
   .form-control {
     width: 100%;
-    padding: 8px;
+    padding: 5px;
     border: 1px solid #b63636;
     border-radius: 4px;
   }
-  
+
   input[type="submit"] {
     background-color: #29deeb;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 5px 5px;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    position: relative;
-    left: 25%;
+    margin-top: px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
-  
+
   input[type="submit"]:hover {
-    background-color: #c029c5;
+    background-color: #000000;
   }
-  @media (max-width: 750px) {
-    .container0 {
-      /* Reducir el ancho del contenedor */
-        max-width: 100%;
-        position: relative; /* Ajustar el ancho máximo del inputBox */
-        left: -15%;
-    
-      }
-    
-      #sub-title {
-        font-size: 18px; /* Ajustar el tamaño de fuente */
-        text-align: center;
-        left: 0;
-      }
-    
-      #inputBox {
-        position: relative; /* Ajustar el ancho máximo del inputBox */
-        left: -15%;
-        justify-content:center;
-        padding: 10px;
-      
-      }
-    
-      input[type="submit"] {
-        max-width: 100%;
-        position: relative; /* Ajustar el ancho máximo del inputBox */
-        left: 50%;
-      }
-      
-      }
+}

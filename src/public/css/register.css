@@ -1,11 +1,12 @@
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
 }
-.contenedor{
+
+#contenedor {
     display: flex;
     justify-content: center;
     position: absolute;
@@ -15,25 +16,27 @@ body{
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
     box-shadow:
-		0px 0px 16px #b463da;
-		/* -8px -8px 16px white; */
+        0px 0px 16px #b463da;
+    /* -8px -8px 16px white; */
 }
-.left{
+
+#left {
     z-index: 100;
     box-shadow:
-    8px 8px 16px #000000,
-    -8px -8px 16px rgb(255, 255, 255);
+        8px 8px 16px #000000,
+        -8px -8px 16px rgb(255, 255, 255);
     float: left;
     justify-content: center;
     text-align: center;
     align-items: center;
     background-color: rgb(84, 186, 220);
-    width: 120%;
+    width: 150%;
     background-color: f8f6f6;
-    height: 75vh;
-    border-radius: 15px 0px 0px 15px;
+    height: 150vh;
+    border-radius: 0px 0px 0px 0px;
 }
-.titulo{
+
+#titulo {
     margin-top: 30%;
     text-align: center;
     font-size: 34px;
@@ -41,14 +44,16 @@ body{
     line-height: 1;
     color: black;
 }
-.parrafo{
+
+#parrafo {
     font-size: 14px;
     letter-spacing: .28px;
     text-align: center;
     line-height: -16;
     color: #000000;
 }
-button{
+
+#button {
     margin-top: 30%;
     width: 180px;
     height: 50px;
@@ -56,7 +61,8 @@ button{
     margin-top: 10px;
     font-size: 14px;
 }
-.right{
+
+#right {
     z-index: 0;
     float: right;
     justify-content: center;
@@ -68,7 +74,8 @@ button{
     border-radius: 0px 15px 15px 0px;
     line-height: 1;
 }
-.titulo2{
+
+#titulo2 {
     margin-top: 20%;
     text-align: center;
     font-size: 34px;
@@ -78,30 +85,31 @@ button{
 }
 
 
-input:focus{
-			box-shadow:
-				inset 4px 4px 4px #d1d9e6,
-				inset -4px -4px 4px #f9f9f9;
+#input:focus {
+    box-shadow:
+        inset 4px 4px 4px #d1d9e6,
+        inset -4px -4px 4px #f9f9f9;
 }
 
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    .contenedor {
+    #contenedor {
         margin-top: 0%;
     }
 
-    .titulo,
-    .parrafo,
-    .titulo2 {
+    #titulo,
+    #parrafo,
+    #titulo2 {
         font-size: 20px;
     }
 
-    button {
+    #button {
         width: 120px;
         height: 35px;
         font-size: 11px;
     }
+
     body {
         display: flex;
         justify-content: center;
@@ -110,62 +118,74 @@ input:focus{
         font-size: 12px;
         margin: 0;
     }
-    
-    .contenedor {
+
+    #contenedor {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         position: absolute;
-        margin-top: 170%;
-        width: 90%; /* Adjust width */
+        margin-top: 180%;
+        width: 90%;
+        /* Adjust width */
         height: 50%;
         background-color: rgb(255, 255, 255);
         border-radius: 20px;
         box-shadow: 0px 0px 16px #b463da;
     }
-    
-    .left {
+
+    #left {
         z-index: 100;
         box-shadow: 8px 8px 16px #000000, -8px -8px 16px rgb(255, 255, 255);
         justify-content: center;
         text-align: center;
         align-items: center;
         background-color: rgb(84, 186, 220);
-        width: 100%; /* Adjust width */
-        height: auto; /* Adjust height */
-        border-radius: 15px 15px 0px 0px;
+        width: 100%;
+        height: auto;
+        margin-bottom: -10%;
+        border-radius: 0px px 0px 0px;
     }
-    
-    .titulo,
-    .parrafo {
-        margin-top: 10%; /* Adjust margin */
-        font-size: 14px; /* Adjust font size */
+
+    #titulo,
+    #parrafo {
+        margin-top: 12%;
+        /* Adjust margin */
+        font-size: 14px;
+        /* Adjust font size */
     }
-    
+
     button {
-        margin-top: 20px; /* Adjust margin */
-        width: 150px; /* Adjust width */
-        height: 40px; /* Adjust height */
-        border-radius: 20px; /* Adjust border radius */
+        margin-top: 20px;
+        /* Adjust margin */
+        width: 150px;
+        /* Adjust width */
+        height: 40px;
+        /* Adjust height */
+        border-radius: 20px;
+        /* Adjust border radius */
         font-size: 12px;
     }
-    
-    .right {
+
+    #right {
         z-index: 0;
         justify-content: center;
         align-items: center;
         text-align: center;
-        width: 100%; /* Adjust width */
-        height: auto; /* Adjust height */
+        width: 100%;
+        /* Adjust width */
+        height: auto;
+        /* Adjust height */
         background-color: rgb(241, 245, 245);
-        border-radius: 0px 0px 15px 15px;
+        border-radius: 0px 0px 0px 0px;
         line-height: 1;
     }
-    
-    .titulo2 {
-        margin-top: 10%; /* Adjust margin */
-        font-size: 24px; /* Adjust font size */
+
+    #titulo2 {
+        margin-top: 10%;
+        /* Adjust margin */
+        font-size: 24px;
+        /* Adjust font size */
     }
-    
+
 }
