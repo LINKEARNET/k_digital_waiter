@@ -1,20 +1,14 @@
-<div id="title">Menus</div>
-<div id="container0">
-  <div class="col-md-12" style="margin-bottom: 5px; ">
-    <img src="/images/img-menu/menuh.jpeg" alt="">
-  </div>
-</div>
-</div>
-
 <link rel="stylesheet" href="/css/Menus.css" />
+  <div class="container0">
+    <div class="col-md-6">
+        <img src="/images/img-menu/menuh.jpeg" alt="">
+    </div>
 
-<form action="/menus/menus" method="POST">
-
-  <div id="logo"></div>
-  <div id="title"></div>
-  <div id="sub-title"></div>
-  <div id="input">
-
+    <div class="col-md-6">
+      <form class="form-padding" action="/menus/menus" method="POST">
+        <div id="logo"></div>
+        <div class="title">categorias</div>
+        <div class="input">
 
     <div id="inputBox">
       <label>Nombre Menu</label>
@@ -43,10 +37,9 @@
         placeholder="Precio"
       />
     </div>
-
-    <div id="inputBox">
-      <input type="submit" value="Guardar" />
-
-    </div>
+      <div>
+            <input type="submit" value="Guardar">
+          </div>
+        </div>
   </div>
-</form>
+  </div>

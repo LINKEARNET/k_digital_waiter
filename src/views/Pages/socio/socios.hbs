@@ -1,59 +1,37 @@
-<div id="title">Socios</div>
-<div id="container0">
-  <div class="col-md-12" style="margin-bottom: 5px; ">
+<link rel="stylesheet" href="/css/socios.css" />
+<div class="container0">
+  <div class="col-md-6">
     <img src="/images/img-Socio/socios.jpeg" alt="">
   </div>
-</div>
-</div>
 
-<link rel="stylesheet" href="/css/socios.css" />
- <form action="/socios/socios" method="POST">
-  <div id="logo"></div>
-  <div id="title"></div>
-  <div id="sub-title"></div>
-  <div id="input">
+  <div class="col-md-6">
+    <form class="form-padding" action="/socios/socios" method="POST">
+      <div id="logo"></div>
+      <div class="title">Socios</div>
+      <div class="input">
 
-
-    <div id="inputBox">
-      <label>Nombre Socio</label>
-      <input
-        type="text"
-        class="form-control"
-        name="nombre_socio"
-        placeholder="Nombre Socio"
-      />
-    </div>
-    <div id="inputBox">
-      <label> Apellido Socio</label>
-      <input
-        type="text"
-        name="apellidoSocio"
-        class="form-control"
-        placeholder="Apellido Socio"
-      />
-    </div>
-
-    <div id="inputBox">
-
-      <label>Correo Electronico</label>
-      <input
-        type="text"
-        name="correoElectronico"
-        class="form-control"
-        placeholder="Correo Electronico"
-      />
-    </div>
         <div id="inputBox">
-      <label>Telefono</label>
-      <input
-        type="text"
-        name="telefono"
-        class="form-control"
-        placeholder="Telefono"
-      />
-    </div>
-    <div id="inputBox">
-      <input type="submit" value="Guardar" />
-    </div>
+          <label>Nombre Socio</label>
+          <input type="text" class="form-control" name="nombre_socio" placeholder="Nombre Socio" />
+        </div>
+        <div id="inputBox">
+          <label> Apellido Socio</label>
+          <input type="text" name="apellidoSocio" class="form-control" placeholder="Apellido Socio" />
+        </div>
+
+        <div id="inputBox">
+
+          <label>Correo Electronico</label>
+          <input type="text" name="correoElectronico" class="form-control" placeholder="Correo Electronico" />
+        </div>
+        <div id="inputBox">
+          <label>Telefono</label>
+          <input type="text" name="telefono" class="form-control" placeholder="Telefono" />
+        </div>
+        <div>
+          <input type="submit" value="Guardar">
+
+        </div>
+      </div>
   </div>
-</form>
+</div>

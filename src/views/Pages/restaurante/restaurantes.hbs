@@ -1,44 +1,44 @@
-<div id="title">Restaurante</div>
-<div id="container0">
-  <div class="col-md-12" style="margin-bottom: 5px; ">
-    <img src="/images/img-restaurante/restaurante.jpeg" alt="">
-  </div>
-</div>
-</div>
-
 <link rel="stylesheet" href="/css/restaurante.css" />
 
-<form action="/restaurantes/restaurantes" method="POST">
-
-  <div id="logo"></div>
-  <div id="title"></div>
-  <div id="sub-title"></div>
-  <div id="input">
-
-
-    <div id="inputBox">
-      <label>Nombre Restaurante</label>
-      <input type="text" class="form-control" name="nombre_restaurante" placeholder="Nombre Restaurante" />
-    </div>
-    <div id="inputBox">
-      <label>Nombre del Dueño</label>
-      <input type="text" name="dueno" class="form-control" placeholder="Nombre del Dueño" />
-    </div>
-    <div id="inputBox">
-      <label>Descripcion</label>
-      <input type="text" name="descripcion" class="form-control" placeholder="Descripcion" />
-    </div>
-    <div id="inputBox">
-      <label>Telefono</label>
-      <input type="text" name="telefono" class="form-control" placeholder="Telefono" />
-    </div>
-    <div id="inputBox">
-      <label>Precio</label>
-      <input type="text" name="precio" class="form-control" placeholder="Precio" />
+<body>
+  <div class="container0">
+    <div class="col-md-6">
+      <img src="/images/img-restaurante/restaurante.jpeg" alt="">
     </div>
 
-    <div id="inputBox">
-      <input type="submit" value="Guardar" />
+    <div class="col-md-6">
+      <form class="form-padding" action="/restaurantes/restaurantes" method="POST">
+        <div id="logo"></div>
+        <div class="title">Restaurante</div>
+        <div class="input">
+
+
+
+          <div id="inputBox">
+
+            <label>Nombre Restaurante</label>
+
+            <input type="text" class="form-control" name="nombre_restaurante" placeholder="Nombre Restaurante" />
+            <div id="inputBox">
+              <label>Nombre del Dueño</label>
+              <input type="text" name="dueno" class="form-control" placeholder="Nombre del Dueño" />
+            </div>
+            <div id="inputBox">
+              <label>Descripcion</label>
+              <input type="text" name="descripcion" class="form-control" placeholder="Descripcion" />
+            </div>
+            <div id="inputBox">
+              <label>Telefono</label>
+              <input type="text" name="telefono" class="form-control" placeholder="Telefono" />
+            </div>
+            <div id="inputBox">
+              <label>Precio</label>
+              <input type="text" name="precio" class="form-control" placeholder="Precio" />
+            </div>
+            <div>
+              <input type="submit" value="Guardar">
+
+            </div>
+          </div>
+        </div>
     </div>
-  </div>
-</form>

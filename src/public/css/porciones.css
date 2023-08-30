@@ -1,65 +1,45 @@
+
 body {
   font-family: 'Poppins', sans-serif;
-  margin: 10%;
+  margin: 0;
   padding: 0;
   background-color: #ececec;
-  margin-top: 5px;
-
-
 }
 
-#container0 {
-  background-color: #f87b7b;
-
-
+.container0 {
+  display: flex;
+  background-color: #fda598;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.container img {
-  width: 120%;
-
+.col-md-6 {
+  flex: 1;
+  padding: 10px;
 }
 
-
-
-#title {
+.title {
   font-size: 36px;
-  font-weight: 10%;
-  margin-top: -20px;
-
-
-
+  font-weight: 700;
+  margin-top: 20px;
+  text-align: center;
 }
 
-#sub-title {
-  font-size: 36px;
-  color: #ffffff;
-  position: relative;
-  left: 40%;
-}
-
-#input {
-  margin-top: -35%;
+.input {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  position: relative;
-  left: 10px;
-  width: 115%;
 }
 
 #inputBox {
   margin: 10px 0;
-  width: 300px;
 }
 
-label {
-  display: block;
+.label {
   font-weight: bold;
   margin-bottom: 5px;
 }
 
 .form-control {
-  width: 100%;
   padding: 8px;
   border: 1px solid #b63636;
   border-radius: 4px;
@@ -73,41 +53,65 @@ input[type="submit"] {
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  position: relative;
-  left: 25%;
-  margin-top: -50px; 
 }
 
 input[type="submit"]:hover {
   background-color: #c029c5;
 }
+
+.container0 .col-md-6 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 @media (max-width: 750px) {
   .container0 {
-    /* Reducir el ancho del contenedor */
-      max-width: 100%;
-      position: relative; /* Ajustar el ancho máximo del inputBox */
-      left: -15%;
-  
-    }
-  
-    #sub-title {
-      font-size: 18px; /* Ajustar el tamaño de fuente */
-      text-align: center;
-      left: 0;
-    }
-  
-    #inputBox {
-      position: relative; /* Ajustar el ancho máximo del inputBox */
-      left: -15%;
-      justify-content:center;
-      padding: 10px;
-    
-    }
-  
-    input[type="submit"] {
-      max-width: 100%;
-      position: relative; /* Ajustar el ancho máximo del inputBox */
-      left: 50%;
-    }
-    
-    }
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col-md-6 {
+    width: 100%;
+  }
+
+  .input {
+    margin-top: 20px;
+  }
+
+  .title {
+    margin-top: 0;
+  }
+
+  .form-padding{
+    padding-bottom: 130px;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 1050px){
+  .container0 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col-md-6 {
+    width: 100%;
+  }
+
+  .input {
+    margin-top: 20px;
+  }
+
+  .title {
+    margin-top: 0;
+  }
+
+  .form-padding{
+    padding-bottom: 130px;
+  }
+
+  .form-padding{
+    padding-left: 50px;
+  }
+}
