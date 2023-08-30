@@ -1,49 +1,47 @@
 <div class="col-md-12" style="margin-bottom: 5px; ">
-        <div class="card text-center border border-primary">
-
-            <h3 class="card-title text-uppercase" style="color:  rgb(168, 61, 35);">
-             Registrese aki
-            </h3> 
-        </div>
-    <a class="imagen-link" href="/socios/add"  >
-    <img src="/images/img-bebida/anadir.png" alt=" ">
-
-<link rel="stylesheet" href="/css/list-socios.css">
-<div class="col-md-12" style="margin-bottom: 5px; ">
     <div class="card text-center border border-primary">
-        
-        <h3 class="card-title text-uppercase" style="color: rgb(180, 78, 19);">
-            Lista de socios
+
+        <h3 class="card-title text-uppercase" style="color:  rgb(168, 61, 35);">
+            Registrese aki
         </h3>
     </div>
-</div>
-     
-</a>
+    <a class="imagen-link" href="/socios/add">
+        <img src="/images/img-bebida/anadir.png" alt=" ">
 
-{{#each socios}}
-<div class="card-body">
-    <p>{{nombre_socio}}</p>
-    <p>{{apellidoSocio}}</p>
-     {{#if foto}}
-    <img class="card__image" src="/{{foto}}" loading="lazy" alt="User Profile">
+        <link rel="stylesheet" href="/css/list-socios.css">
+        <div class="col-md-12" style="margin-bottom: 5px; ">
+            <div class="card text-center border border-primary">
+
+                <h3 class="card-title text-uppercase" style="color: rgb(180, 78, 19);">
+                    Lista de socios
+                </h3>
+            </div>
+        </div>
+
+    </a>
+
+    {{#each socios}}
+    <div class="card-body">
+        <p>{{nombre_socio}}</p>
+        <p>{{apellidoSocio}}</p>
+        {{#if foto}}
+        <img class="card__image" src="/{{foto}}" loading="lazy" alt="User Profile">
+        {{else}}
+        <img src="/not-found/not-found-image.png" class="card__image" alt="..." alt="User Profile">
+        {{/if}}
+        <p>{{correoElectronico}}</p>
+        <p>{{telefono}}</p>
+
+        <center>
+            <a href="/socios/delete-socios/{{id}}" class="danger">Eliminar</a>
+            <a href="/socios/edit-socios/{{id}}" class="secondary">Editar</a>
+            <form action="/socios/foto-socio/{{id}}" method="POST" encType="multipart/form-data">
+                <input type="file" name="sampleFile" accept="image/*" />
+                <input type="submit">
+            </form>
+        </center>
+    </div>
     {{else}}
-    <img src="/not-found/not-found-image.png" class="card__image" alt="..." alt="User Profile">
-    {{/if}}
-    <p>{{correoElectronico}}</p>
-    <p>{{telefono}}</p>
-    
     <center>
-        <a href="/socios/delete-socios/{{id}}" class="danger">Eliminar</a>
-        <a href="/socios/edit-socios/{{id}}" class="secondary">Editar</a>
-        <form action="/socios/foto-socio/{{id}}" method="POST" encType="multipart/form-data">
-            <input type="file" name="sampleFile" accept="image/*" />
-            <input type="submit">
-        </form>
     </center>
-</div>
-{{else}}
-<center> 
-</center>
-{{/each}}
-
-
+    {{/each}}
